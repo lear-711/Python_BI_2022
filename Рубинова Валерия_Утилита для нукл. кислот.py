@@ -7,6 +7,7 @@ def sort_set_upper_nucl_seq(nucl_seq):
     return sorted(set(b))
 
 
+
 transcribe_dict = {'A': 'U', 'a':'u', 'G':'C', 'g':'c', 'T':'A', 't':'a', 'C':'G', 'c':'g'}
 complement_DNA_dict = {'A': 'T', 'a':'t', 'G':'C', 'g':'c', 'T':'A', 't':'a', 'C':'G', 'c':'g'}
 complement_RNA_dict = {'A': 'U', 'a':'u', 'G':'C', 'g':'c', 'U':'A', 'u':'a', 'C':'G', 'c':'g'}
@@ -20,10 +21,13 @@ while comm != 'exit':
     list_nucl_seq = sort_set_upper_nucl_seq(nucl_seq)
     if (list_nucl_seq == ['A', 'C', 'G', 'T'] or list_nucl_seq == ['A', 'C', 'G', 'U']):
         if comm == 'transcribe':
-            res_list = []
-            for each in list(nucl_seq):
-                res_list.append(transcribe_dict.get(each))
-            print(''.join(res_list))
+            if list_nucl_seq == ['A', 'C', 'G', 'T']:
+                res_list = []
+                for each in list(nucl_seq):
+                    res_list.append(transcribe_dict.get(each))
+                print(''.join(res_list))
+            else:
+                print("Вы ввели последовательность РНК! Уточните команду и введите корректную последовательность!")
         
         elif comm == 'reverse':
             print(nucl_seq[::-1])
@@ -57,6 +61,10 @@ while comm != 'exit':
     comm = input('Введите команду: ')
     
 print("Удачи!")
+
+
+
+
 
 
 
