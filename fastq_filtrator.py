@@ -95,10 +95,4 @@ def main(input_fastq, output_file_prefix, gc_bounds = (0, 100), length_bounds = 
 
 
 
-input_fastq = "test.fastq"
-output_file_prefix = "prefix"
-
-main(input_fastq, output_file_prefix, gc_bounds = (20, 80), length_bounds = (0, 2**32), 
-         quality_threshold = 0, save_filtered = True)
-
 
