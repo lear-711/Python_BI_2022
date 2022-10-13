@@ -74,9 +74,7 @@ def main(input_fastq, output_file_prefix, gc_bounds = (0, 100), length_bounds = 
          quality_threshold = 0, save_filtered = False):
     
     passed_file = output_file_prefix + "_passed.fastq"
-    
-    if save_filtered == True:
-        failed_file = output_file_prefix + "_failed.fastq"
+    failed_file = output_file_prefix + "_failed.fastq"
     
     with open(input_fastq) as file:
         while True:
