@@ -22,12 +22,18 @@ cd environment/
 source environment/bin/activate
 ```
 
-2. **Clone fork from Michael's repository:**
+2. **Clone fork from my repository:**
 
 ```
-git clone git@github.com:lear-711/Virtual_environment_research.git
+git clone https://github.com/lear-711/Python_BI_2022.git
 
 cd Virtual_environment_research/
+
+git fetch
+
+git checkout Pain_HW
+
+cd Pain
 ```
 
 Here we have file pain.py!
