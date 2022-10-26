@@ -17,8 +17,6 @@ python3.10
 ```
 python -m venv environment
 
-cd environment/
-
 source environment/bin/activate
 ```
 
