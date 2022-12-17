@@ -7,6 +7,7 @@ cd Python_BI_2022
 git fetch
 git checkout Scripts_bash_HW
 cd Unix_HW
+export PATH="$(pwd):$PATH"
 ```
 
 ## 1. **wc.py** 
